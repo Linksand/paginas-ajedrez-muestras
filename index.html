@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Deportes y Clubes Pichincha</title>
+    <style>
+      :root {
+        --bg: #0b1220;
+        --panel: #121b2d;
+        --panel-2: #17253f;
+        --text: #edf3ff;
+        --muted: #b9c8e6;
+        --accent: #70d6ff;
+        --accent-2: #7ef0b8;
+        --border: rgba(255,255,255,0.09);
+      }
+
+      * { box-sizing: border-box; }
+      body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background: linear-gradient(135deg, #07111c, #10213a 45%, #132b46);
+        color: var(--text);
+      }
+      .container {
+        max-width: 1100px;
+        margin: 0 auto;
+        padding: 52px 20px 80px;
+      }
+      .hero {
+        background: rgba(18, 27, 45, 0.82);
+        border: 1px solid var(--border);
+        border-radius: 24px;
+        padding: 42px 28px;
+        text-align: center;
+        box-shadow: 0 18px 50px rgba(0,0,0,0.25);
+      }
+      .badge {
+        display: inline-block;
+        background: rgba(112,214,255,0.12);
+        color: var(--accent);
+        padding: 8px 14px;
+        border-radius: 999px;
+        font-size: 12px;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+        border: 1px solid rgba(112,214,255,0.35);
+      }
+      h1 {
+        font-size: clamp(2.2rem, 4vw, 4rem);
+        margin: 22px 0 16px;
+      }
+      .subtitle {
+        max-width: 720px;
+        margin: 0 auto;
+        color: var(--muted);
+        font-size: 1.1rem;
+        line-height: 1.7;
+      }
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+        gap: 18px;
+        margin-top: 36px;
+      }
+      .card {
+        background: rgba(23, 37, 63, 0.82);
+        border: 1px solid var(--border);
+        border-radius: 18px;
+        padding: 18px;
+        min-height: 190px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+      .card h2 {
+        margin: 0 0 10px;
+        font-size: 1.4rem;
+      }
+      .card p {
+        color: var(--muted);
+        line-height: 1.6;
+        margin: 0 0 16px;
+      }
+      .card a {
+        display: inline-block;
+        width: fit-content;
+        background: linear-gradient(90deg, var(--accent), var(--accent-2));
+        color: #07111c;
+        text-decoration: none;
+        padding: 12px 16px;
+        border-radius: 10px;
+        font-weight: 700;
+      }
+      footer {
+        text-align: center;
+        color: var(--muted);
+        margin-top: 30px;
+        font-size: 0.95rem;
+      }
+      @media (max-width: 600px) {
+        .hero { padding: 30px 18px; }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <section class="hero">
+        <div class="badge">Pichincha</div>
+        <h1>Deportes y clubes institucionales</h1>
+        <p class="subtitle">
+          Portal de acceso para ver cada una de las páginas públicas del proyecto.
+        </p>
+      </section>
+
+      <div class="grid">
+        <article class="card">
+          <div>
+            <h2>Club de fútbol</h2>
+            <p>Sitio institucional con enfoque deportivo y representativo del club.</p>
+          </div>
+          <a href="club%20de%20futbol%7D/index.html">Abrir página</a>
+        </article>
+
+        <article class="card">
+          <div>
+            <h2>Club otros</h2>
+            <p>Presentación del club de ajedrez con identidad institucional y visual clara.</p>
+          </div>
+          <a href="club%20otros/index.html">Abrir página</a>
+        </article>
+
+        <article class="card">
+          <div>
+            <h2>Talentos Pichincha</h2>
+            <p>Plataforma con enfoque formativo y deportivo para talentos de la región.</p>
+          </div>
+          <a href="Talentos%20pichincha/index.html">Abrir página</a>
+        </article>
+
+        <article class="card">
+          <div>
+            <h2>Deportes Pichincha</h2>
+            <p>Proyecto con disciplinas deportivas y contenido institucional para presentación.</p>
+          </div>
+          <a href="Deportes%20Pichincha/index.html">Abrir página</a>
+        </article>
+      </div>
+
+      <footer>
+        Proyecto público · acceso directo sin cuenta
+      </footer>
+    </div>
+  </body>
+</html>
