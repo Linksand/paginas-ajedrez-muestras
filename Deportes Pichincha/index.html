@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Escalada deportiva, gimnasia rítmica y atletismo en Pichincha.">
+  <title>Deportes de Pichincha | Escalada, gimnasia y atletismo</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#contenido">Ir al contenido</a>
+  <header class="site-header">
+    <a class="brand" href="#inicio" aria-label="Deportes de Pichincha, inicio"><span class="brand-mark">DP</span><span>Deportes de <strong>Pichincha</strong></span></a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Abrir menú"><span></span><span></span></button>
+    <nav class="site-nav" id="site-nav" aria-label="Navegación principal"><a href="#disciplinas">Disciplinas</a><a href="#agenda">Agenda</a></nav>
+  </header>
+  <main id="contenido">
+    <section class="hero" id="inicio" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow"><span></span> Movimiento deportivo en la provincia</p>
+        <h1 id="hero-title">Deportes de<br><em>Pichincha.</em></h1>
+        <p class="hero-lead">Escalada deportiva, gimnasia rítmica y atletismo.</p>
+        <p class="hero-note">Tres disciplinas, una provincia llena de caminos para moverse, entrenar y competir.</p>
+        <a class="button" href="#disciplinas">Explorar disciplinas <span aria-hidden="true">↓</span></a>
+      </div>
+      <figure class="hero-visual"><img src="assets/escalada-deportiva.jpg" alt="Deportista practicando escalada en muro"><figcaption>Escalada deportiva</figcaption></figure>
+      <div class="hero-footer"><span>Escalada <b>·</b> Gimnasia <b>·</b> Atletismo</span><span>Deporte en Pichincha</span></div>
+    </section>
+
+    <section class="disciplines section-wrap" id="disciplinas" aria-labelledby="disciplines-title">
+      <div class="section-heading"><div class="section-kicker"><span>01</span><span>Actividad deportiva</span></div><h2 id="disciplines-title">Tres disciplinas en movimiento.</h2><p>Conoce algunas de las disciplinas deportivas que se practican en Pichincha.</p></div>
+      <div class="discipline-grid">
+        <article class="discipline discipline-climb">
+          <img src="assets/escalada-entrenamiento.jpg" alt="Entrenamiento de escalada en muro">
+          <div class="discipline-heading"><span>01 / Altura</span><h3>Escalada deportiva</h3></div>
+          <p>Fuerza, equilibrio y lectura de ruta en cada ascenso.</p>
+        </article>
+        <article class="discipline discipline-gym">
+          <img src="assets/gimnasia-ritmica.jpg" alt="Equipo de gimnasia rítmica de Pichincha">
+          <div class="discipline-heading"><span>02 / Expresión</span><h3>Gimnasia rítmica</h3></div>
+          <p>Coordinación, flexibilidad y expresión a través del movimiento.</p>
+        </article>
+        <article class="discipline discipline-run">
+          <img src="assets/atletismo.jpg" alt="Atleta ecuatoriano compitiendo en una prueba de carrera">
+          <div class="discipline-heading"><span>03 / Resistencia</span><h3>Atletismo</h3></div>
+          <p>Velocidad, resistencia y técnica en cada distancia.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="agenda" id="agenda" aria-labelledby="agenda-title">
+      <div class="section-wrap agenda-content">
+        <div><div class="section-kicker"><span>02</span><span>Calendario deportivo</span></div><h2 id="agenda-title">Próximas competencias.</h2></div>
+        <p>Consulta las fechas y convocatorias vigentes con las organizaciones deportivas de cada disciplina.</p>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer"><a class="footer-brand" href="#inicio"><span class="brand-mark">DP</span> Deportes de Pichincha</a><span>Escalada deportiva · Gimnasia rítmica · Atletismo</span><span>&copy; <span id="current-year">2026</span></span></footer>
+</body>
+</html>

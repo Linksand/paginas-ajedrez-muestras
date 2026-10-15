@@ -1,0 +1,100 @@
+:root {
+  color-scheme: light;
+  --ink: #192b2a;
+  --deep: #154c4c;
+  --coral: #e25743;
+  --aqua: #a9d9d1;
+  --lime: #dbe76b;
+  --paper: #f6f8f4;
+  --white: #fff;
+  --muted: #596a67;
+  --line: #d2ded8;
+  --serif: "Bodoni MT", "Palatino Linotype", Georgia, serif;
+  --sans: "Avenir Next", "Trebuchet MS", sans-serif;
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; scroll-padding-top: 78px; }
+body { margin: 0; background: var(--paper); color: var(--ink); font: 16px/1.6 var(--sans); }
+a { color: inherit; text-decoration: none; }
+button { font: inherit; }
+.skip-link { position: absolute; top: 8px; left: 8px; z-index: 8; padding: 10px 14px; transform: translateY(-150%); background: var(--lime); }
+.skip-link:focus { transform: translateY(0); }
+
+.site-header { position: relative; z-index: 5; display: flex; min-height: 76px; align-items: center; justify-content: space-between; padding: 0 7%; border-bottom: 1px solid var(--line); background: var(--paper); }
+.brand, .footer-brand { display: inline-flex; align-items: center; gap: 11px; font-size: 13px; }
+.brand strong { display: block; }
+.brand-mark { display: grid; width: 40px; aspect-ratio: 1; place-items: center; background: var(--coral); color: var(--white); font-size: 12px; font-weight: 800; }
+.site-nav { display: flex; align-items: center; gap: 32px; font-size: 13px; }
+.site-nav a:hover { color: var(--coral); }
+.menu-toggle { display: none; }
+
+.hero { position: relative; display: grid; min-height: 590px; grid-template-columns: 1fr .9fr; align-items: center; gap: 6%; overflow: hidden; padding: 72px 10% 100px; background: var(--deep); color: var(--white); }
+.hero::before { position: absolute; inset: 0 0 0 52%; background: repeating-linear-gradient(135deg, transparent 0 31px, rgb(255 255 255 / 7%) 32px 33px); content: ""; pointer-events: none; }
+.hero-copy, .hero-visual { position: relative; z-index: 1; }
+.eyebrow, .section-kicker, .hero-footer { font-size: 10px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; }
+.eyebrow { color: #d4e9e2; }
+.eyebrow span { display: inline-block; width: 7px; height: 7px; margin-right: 9px; border-radius: 50%; background: var(--lime); }
+.hero h1 { margin: 24px 0 18px; font: 400 76px/.92 var(--serif); }
+.hero h1 em { color: var(--lime); }
+.hero-lead { max-width: 420px; margin: 26px 0 7px; font-size: 19px; }
+.hero-note { max-width: 410px; color: #d4e9e2; font-size: 13px; }
+.button { display: inline-flex; min-height: 46px; align-items: center; gap: 22px; margin-top: 12px; padding: 0 17px; background: var(--lime); color: var(--ink); font-size: 12px; font-weight: 700; }
+.hero-visual { width: 100%; margin: 0; }
+.hero-visual img { display: block; width: 100%; aspect-ratio: 1.2; object-fit: cover; border: 1px solid rgb(255 255 255 / 55%); }
+.hero-visual figcaption { margin-top: 8px; color: #d4e9e2; font-size: 11px; }
+.hero-footer { position: absolute; right: 10%; bottom: 23px; left: 10%; display: flex; justify-content: space-between; color: #d4e9e2; font-size: 9px; }
+.hero-footer b { color: var(--lime); }
+
+.section-wrap { padding-right: 10%; padding-left: 10%; }
+.disciplines { padding-top: 88px; padding-bottom: 100px; }
+.section-kicker { display: flex; gap: 12px; color: var(--deep); }
+.section-kicker span:first-child { color: #879692; }
+.section-heading { max-width: 700px; }
+.section-heading h2, .agenda h2 { margin: 20px 0 12px; font: 400 52px/1.02 var(--serif); }
+.section-heading > p { max-width: 520px; color: var(--muted); font-size: 14px; }
+.discipline-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 22px; margin-top: 40px; }
+.discipline { min-width: 0; padding-top: 12px; border-top: 4px solid var(--coral); }
+.discipline-gym { border-color: var(--deep); }
+.discipline-run { border-color: #a9b831; }
+.discipline img { display: block; width: 100%; aspect-ratio: 4 / 3; object-fit: cover; }
+.discipline-heading { display: flex; flex-direction: column; align-items: flex-start; gap: 7px; padding-top: 17px; }
+.discipline-heading > span { color: var(--muted); font-size: 9px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; }
+.discipline h3 { margin: 0; font: 400 25px/1.15 var(--serif); }
+.discipline > p { margin: 9px 0 0; color: var(--muted); font-size: 12px; }
+
+.agenda { padding: 72px 0 78px; background: var(--aqua); }
+.agenda-content { display: grid; grid-template-columns: 1fr .65fr; align-items: end; gap: 8%; }
+.agenda .section-kicker { color: var(--deep); }
+.agenda h2 { margin-bottom: 0; }
+.agenda-content > p { max-width: 390px; margin: 0; color: var(--ink); font-size: 14px; }
+.site-footer { display: flex; min-height: 82px; align-items: center; justify-content: space-between; gap: 18px; padding: 18px 7%; background: var(--ink); color: var(--white); font-size: 10px; }
+.footer-brand { font-size: 12px; }
+.footer-brand .brand-mark { width: 32px; }
+
+@media (max-width: 760px) {
+  .site-header { min-height: 68px; padding: 0 6%; }
+  .menu-toggle { display: grid; width: 42px; height: 42px; align-content: center; justify-items: center; gap: 6px; border: 1px solid var(--line); background: transparent; }
+  .menu-toggle span { width: 17px; height: 1px; background: var(--ink); }
+  .site-nav { position: absolute; top: 68px; right: 0; left: 0; display: none; flex-direction: column; align-items: stretch; gap: 0; padding: 10px 6% 16px; border-bottom: 1px solid var(--line); background: var(--paper); }
+  .site-nav[data-open="true"] { display: flex; }
+  .site-nav a { padding: 11px 0; }
+  .hero { grid-template-columns: 1fr; gap: 28px; padding: 54px 8% 82px; }
+  .hero h1 { font-size: 60px; }
+  .hero-visual { max-width: 520px; }
+  .hero-footer { right: 8%; left: 8%; }
+  .section-wrap { padding-right: 8%; padding-left: 8%; }
+  .disciplines { padding-top: 64px; padding-bottom: 72px; }
+  .section-heading h2, .agenda h2 { font-size: 40px; }
+  .discipline-grid { grid-template-columns: 1fr; gap: 32px; }
+  .discipline img { aspect-ratio: 1.4; }
+  .agenda-content { grid-template-columns: 1fr; gap: 22px; }
+  .agenda { padding: 58px 0; }
+  .site-footer { flex-wrap: wrap; padding: 20px 8%; }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .hero-copy, .hero-visual { animation: appear .65s both; }
+  .hero-visual { animation-delay: .12s; }
+  @keyframes appear { from { opacity: 0; transform: translateY(12px); } to { opacity: 1; transform: translateY(0); } }
+}
